@@ -11,11 +11,23 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(img/wallpaperflare.com_wallpaper\ \(5\).jpg);
+    background: url(img/wallpaperflare.com_wallpaper\ \(17\).jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
+    z-index: 1;
+}
+section:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
 }
 
 section h2 {
